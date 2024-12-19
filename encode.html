@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script src='logic.js' type='text/javascript'></script>
+    <script src='encode.js' type='text/javascript'></script>
+    <script src='sjcl.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <div class='step'>인코딩할 파일 선택</div>
+    <img id='preview' class='preview hide' />
+    <div class='sectionbody'>
+        <input type='file' id='file' />
+    </div>
+    <textarea id='message' class='message' maxlength='1000' placeholder='Type hidden message'></textarea>
+    <button id='encode' class='submit'>인코드</button>
+    <canvas id='canvas' style='display: none;'></canvas>
+
+    <h2>출력 이미지</h2>
+    <img id='output' />
+</body>
+
+</html>
